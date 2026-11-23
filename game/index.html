@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#100b2b"><title>Neon Coast — Cidade Sem Lei</title>
+<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<main id="app">
+<canvas id="game" aria-label="Jogo Neon Coast"></canvas>
+<section id="start" class="overlay">
+<div class="sun"></div><div class="hero-copy"><p class="eyebrow">UMA CIDADE • MIL HISTÓRIAS</p><h1>NEON<br><span>COAST</span></h1><p class="tag">A NOITE É SUA. A CIDADE TAMBÉM.</p>
+<button id="play">JOGAR AGORA <b>▶</b></button><small>WASD mover · E entrar/sair do carro · Shift correr · Espaço frear</small></div>
+<div class="hero-car">🚘</div><div class="cash">＄ <strong>250.000</strong><small>COMECE SUA HISTÓRIA</small></div>
+</section>
+<section id="hud" class="hidden"><div class="topline"><b>NEON COAST</b><span id="mission">MISSÃO: ENCONTRE O CONTATO</span><span id="wanted">◇ ◇ ◇</span></div><div class="stats"><span>♥ <b id="health">100</b></span><span>＄ <b id="money">250</b></span><span>KM/H <b id="speed">0</b></span></div><div id="map"><canvas id="mini" width="150" height="150"></canvas></div><div id="toast"></div><div class="controls">WASD mover · E veículo · Clique disparar · Shift correr · P pausar</div></section>
+</main><script src="./game.js"></script>
+</body></html>
